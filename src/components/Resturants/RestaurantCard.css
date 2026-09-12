@@ -1,0 +1,85 @@
+.restaurant-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-6px);
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.image-overlay h3 {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuisine {
+  color: #555;
+  font-size: 14px;
+}
+
+.rating-badge {
+  background: #16a34a;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.price {
+  margin: 10px 0 6px;
+  color: #333;
+}
+
+.delivery {
+  color: #666;
+  font-size: 14px;
+}
