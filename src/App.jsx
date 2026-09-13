@@ -1,9 +1,8 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import SearchBar from "./components/SearchBar/SearchBar";
-import Categories from "./components/Categories/Categories";
 import Footer from "./components/Footer/Footer";
-import PopularRestaurants from "./components/Resturants/PopularRestaurants";
+import { Outlet } from "react-router-dom";
+
 
 
 function App() {
@@ -11,9 +10,7 @@ function App() {
     <div className="center">
       <section className="main-section">
         <Header />
-        <SearchBar />
-        <Categories />
-        <PopularRestaurants />
+        <Outlet/>
         <Footer />
       </section>
     </div>
