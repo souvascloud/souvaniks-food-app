@@ -7,6 +7,7 @@ import AboutUs from "./components/about-us/AboutUs.jsx";
 import ContactUs from "./components/contact-us/ContactUs.jsx";
 import Error from "./components/error/Error.jsx";
 import Main from "./components/main/Main.jsx";
+import RestaurantDetails from "./components/Resturants/RestaurantDetails.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const appRouter = createBrowserRouter([
         path: "contact",
         element: <ContactUs />,
       },
+      {
+        path: "/restaurant/:slug",
+        element : <RestaurantDetails/>
+      }
     ],
   },
 ]);
